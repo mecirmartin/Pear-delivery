@@ -47,10 +47,13 @@ const Home: React.FC<RouteComponentProps> = props => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>
-            <h1>🍐 Pear </h1>
+            <div style={{ display: 'flex' }}>
+              <img src="https://svgur.com/i/Uqo.svg" width="50px" style={{ display: 'inline-block' }} alt="" />
+              <h1 style={{ marginLeft: 3 }}>Pear</h1>
+            </div>
           </IonTitle>
           <IonAvatar style={{ height: '3rem', width: '3rem', marginRight: 20 }} slot="end">
-            <img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/127021359_3806244856076929_3275675623217607537_o.jpg?_nc_cat=107&ccb=3&_nc_sid=09cbfe&_nc_ohc=K6UwHMCU7d4AX_Bp8lA&_nc_ht=scontent-vie1-1.xx&oh=a3a4a6ce2c9b8598eda8396a6e4214db&oe=605B065A" />
+            <img src="https://i.pinimg.com/originals/f7/2a/d5/f72ad5a9dfc4e526543822c4eed9940d.jpg" />
           </IonAvatar>
         </IonToolbar>
       </IonHeader>
@@ -73,7 +76,7 @@ const Home: React.FC<RouteComponentProps> = props => {
         </IonSegment>
         <div style={{ margin: 16, paddingTop: 16, paddingBottom: 16 }}>
           <IonText color="primary">
-            <h1>Hey Martin!</h1>
+            <h1>Hey Sofia!</h1>
           </IonText>
           <h3>Let's deliver something 🚚 📦</h3>
         </div>
