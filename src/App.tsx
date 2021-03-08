@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Redirect, RouteComponentProps } from 'react-router-dom'
 import { IonRouterOutlet, IonPage, IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/react'
-import { home, apps } from 'ionicons/icons'
+import { home, apps, cardOutline, discOutline, cubeOutline } from 'ionicons/icons'
 import { Helmet } from 'react-helmet'
 import Home from './pages/Home'
 import User from './pages/User'
@@ -54,8 +54,16 @@ const App: React.FunctionComponent<RouteComponentProps> = props => {
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="about" href="/about">
-            <IonIcon icon={apps} />
-            <IonLabel>About</IonLabel>
+            <IonIcon icon={cubeOutline} />
+            <IonLabel>Deliveries</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="about" href="/about">
+            <IonIcon icon={discOutline} />
+            <IonLabel>Discover</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="about" href="/about">
+            <IonIcon icon={cardOutline} />
+            <IonLabel>Withdraw</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
